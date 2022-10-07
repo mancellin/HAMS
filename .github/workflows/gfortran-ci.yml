@@ -94,6 +94,7 @@ jobs:
               cd DeepCwind
               ../../SourceCode/hams
               cd ../..
+              diff Output/Hams_format/OAMASS1.txt Output_Benchmark/Hams_format/OAMASS1.txt
               
         #- name: CertTest HywindSpar
         #  if: contains(matrix.os, 'macos') || contains(matrix.os, 'ubuntu')
